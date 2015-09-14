@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    
+    <com.example.tz_auguest_lession_4_popwindow_zeej.RadarView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        ></com.example.tz_auguest_lession_4_popwindow_zeej.RadarView>
+ <!--    <ImageView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+		android:src="@drawable/all"   
+		android:layout_gravity="center"     
+        /> -->
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fe0"
+        android:text="关键点 :setBackgroundDrawable()
+        WindowManager.LayoutParams属性：
+       	 显示的位置 Gravity
+       	 宽高
+       	 设置background
+       	 。。。
+       	 token？
+       	 
+       	 分析：
+       	 preparePopup（WindowManager.LayoutParams p）
+       	 	因为mContentView.getLayoutParams()的父容器为空
+       	 	PopupViewContainer
+       	 	invikePoppup()
+       	 	
+       	 
+        
+        " />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pop"
+        android:text="不能点击外面消失的SystemPopWindow" />
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="popdismiss"
+        android:text="点击外面消失的SystemPopWindow" />
+
+</LinearLayout>

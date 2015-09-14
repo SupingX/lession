@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">tz_Auguest_lession_4_popwindow_zeej</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_system_pop_window">SystemPopWindowActivity</string>
+    <string name="title_activity_custom">CustomActivity</string>
+    <string name="title_activity_custom_view">CustomViewActivity</string>
+    <string name="title_activity_rarar">RararActivity</string>
+
+</resources>
