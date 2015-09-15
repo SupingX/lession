@@ -22,18 +22,18 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="custom PopWindow"
-        android:onClick="custom_view"
+        android:onClick="custom_pop_view"
         />
            <Button 
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="custom_view"
+        android:text="custom_textView"
         android:onClick="custom_view"
         />
                   <Button 
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="radar"
+        android:text="radarView"
         android:onClick="radar"
         />
 </LinearLayout>

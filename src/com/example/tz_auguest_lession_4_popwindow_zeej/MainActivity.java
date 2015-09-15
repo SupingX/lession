@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
 	public void system_pop(View v){
 		startActivity(new Intent(this,SystemPopWindowActivity.class));
 	}
-	public void custom_pop(View v){
+	public void custom_pop_view(View v){
 		startActivity(new Intent(this,CustomPopupWindowActivity.class));
 	}
 	public void custom_view(View v){

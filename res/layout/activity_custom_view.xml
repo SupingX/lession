@@ -4,19 +4,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
    >
-	<Button
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:text="自定义View"
-	    
-	    ></Button>
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:text="问题 ：字数大于屏幕宽度需要处理 "
+    ></TextView>
     <com.example.tz_auguest_lession_4_popwindow_zeej.CustomTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        custom:textColor="#f00"
-        custom:textSize="30sp"
-        custom:text="念州思杭sss"
-        
+        custom:textColor="#fF0"
+        custom:textSize="40sp"
+        android:padding="10dp"
+        custom:text="念州思杭"
 	 >
+	 
 </com.example.tz_auguest_lession_4_popwindow_zeej.CustomTextView>
+   <com.example.tz_auguest_lession_4_popwindow_zeej.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:textColor="#fF0"
+        custom:textSize="40sp"
+        android:padding="10dp"
+        custom:text="红豆生南国，此物最相思。春来发几只，愿君多采？"
+	 ></com.example.tz_auguest_lession_4_popwindow_zeej.CustomTextView>
 </LinearLayout>

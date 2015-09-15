@@ -5,6 +5,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/**
+ * 作业 ： 自定义textView 
+ * @author supingX
+ *
+ */
 public class CustomViewActivity extends Activity {
 
 	@Override

@@ -13,8 +13,16 @@ import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.view.MotionEvent;
 import android.view.View;
-
+/**
+ *  自定义雷达
+ * @author zeej 
+ * QQ ： 363633726
+ * 2015年9月3日
+ *
+ *
+ */
 public class RadarView extends View{
 	
 	private Matrix matrix;
@@ -26,6 +34,7 @@ public class RadarView extends View{
 	private int heightPixels;
 	private Drawable drawable;
 	private Bitmap bitmap;
+	private boolean isRotation;
 	private Handler mHandler = new Handler(){
 		
 	};
@@ -39,6 +48,7 @@ public class RadarView extends View{
 			//chonghui
 			invalidate();
 			mHandler.postDelayed(runnable, 50);
+			isRotation = true;
 		}
 	};
 	
@@ -77,26 +87,47 @@ public class RadarView extends View{
 		heightPixels = displayMetrics.heightPixels;
 		
 		setBackgroundColor(Color.BLACK);
-		bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.all);
+		bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.grace);
 		
 		//
 		mHandler.post(runnable);
 	}
 	
 	
+	
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
+		//画圈圈
 		for (int i = 0; i < 5; i++) {
+			
 			canvas.drawCircle(widthPixels/2, heightPixels/2, 75*i, mPaintLine);
 		}
 		SweepGradient gradient = new SweepGradient(widthPixels/2, heightPixels/2, Color.TRANSPARENT, Color.parseColor("#aaaaaaaa"));
 		mPaintSectorPaint.setShader(gradient);
-		//xuanzhan
+		//旋转画布
 		canvas.concat(matrix);
+		//画渐变
 		canvas.drawCircle(widthPixels/2, heightPixels/2, 75*3, mPaintSectorPaint);
+		//画美吕
 		canvas.drawBitmap(bitmap, widthPixels/2-bitmap.getWidth()/2,heightPixels/2-bitmap.getHeight()/2 , mPaintLine);
 	
+	}
+	
+	//开始 
+	public void startRotation(){
+		mHandler.post(runnable);
+		isRotation = true;
+	}
+	
+	//停止
+	public void stopRotation(){
+		mHandler.removeCallbacks(runnable);
+		isRotation = false;
+	}
+	
+	public boolean isRotationing(){
+		return this.isRotation;
 	}
 	
 	
