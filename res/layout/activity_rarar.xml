@@ -4,7 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="${packageName}.${activityClass}" >
-
+ <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="作业：自定义RadarView by zeej"
+        ></TextView>
     <com.example.tz_auguest_lession_4_popwindow_zeej.RadarView
         android:id="@+id/radar"
         android:layout_height="match_parent"

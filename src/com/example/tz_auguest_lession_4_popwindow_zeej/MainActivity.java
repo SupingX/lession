@@ -24,6 +24,9 @@ public class MainActivity extends Activity {
 	public void custom_view(View v){
 		startActivity(new Intent(this,CustomViewActivity.class));
 	}
+	public void custiom_img_view(View v){
+		startActivity(new Intent(this,CustomImageViewActivity.class));
+	}
 	public void radar(View v){
 		startActivity(new Intent(this,RadarActivity.class));
 	}

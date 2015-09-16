@@ -7,5 +7,6 @@
     <string name="title_activity_custom">CustomActivity</string>
     <string name="title_activity_custom_view">CustomViewActivity</string>
     <string name="title_activity_rarar">RararActivity</string>
+    <string name="title_activity_custom_image_view">CustomImageViewActivity</string>
 
 </resources>

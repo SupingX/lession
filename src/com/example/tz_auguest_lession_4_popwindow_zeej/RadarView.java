@@ -94,7 +94,6 @@ public class RadarView extends View{
 	}
 	
 	
-	
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
@@ -110,7 +109,9 @@ public class RadarView extends View{
 		//画渐变
 		canvas.drawCircle(widthPixels/2, heightPixels/2, 75*3, mPaintSectorPaint);
 		//画美吕
-		canvas.drawBitmap(bitmap, widthPixels/2-bitmap.getWidth()/2,heightPixels/2-bitmap.getHeight()/2 , mPaintLine);
+		if (bitmap!=null) {
+			canvas.drawBitmap(bitmap, widthPixels/2-bitmap.getWidth()/2,heightPixels/2-bitmap.getHeight()/2 , mPaintLine);
+		}
 	
 	}
 	

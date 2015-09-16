@@ -4,7 +4,11 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
-
+ <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="作业：自定义PopupWindow by zeej"
+        ></TextView>
   <TextView 
         
         android:layout_height="wrap_content"
